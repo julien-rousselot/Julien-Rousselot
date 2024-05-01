@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Condensed:ital,wght@0,100;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Farsan&family=Major+Mono+Display&family=Roboto+Condensed:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Condensed:ital,wght@0,100;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farsan&family=Major+Mono+Display&family=Roboto+Condensed:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
 /* Display block avec ajout de float, une size sur le premier block et le deuxieme prendra la place restante donc pas de taille en largeur */
 /* .pgauche {
     background-color: rgb(154, 28, 129);
@@ -55,47 +56,204 @@
     font-size: 2.5rem;
     } */
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
+/* body{
     font-family: "Protest Riot", sans-serif;
-    width: 100vw;
-    overflow-x: hidden;
- }
+    /* width: 100vw; */
+/* overflow-x: hidden;
+ } */
 
-.section1 {
-    background-color: #F1E3D3;
-    text-align: center;
-    height: 110vh;
-    width: 100%;
+.topPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1e3d3;
+}
+
+.topPageDiv{
     position: relative;
 }
 
-header{
-    padding-top: 2rem ;
-    height: 10vh;
-}
-h1, h2{
-    color: #99C1B9;
-    font-size: 3rem;
-    font-family: "Farsan", cursive;
+header {
+  padding-top: 0.5rem;
+  height: 10vh;
 }
 
-.iconreseau{
-    display: none;
-    /* justify-content: center;
-    width: 35px;
-    padding-left: 4px; */
+h1 {
+  text-align: center;
+  color: #99c1b9;
+  font-family: "Farsan", cursive;
+  font-size: 3rem;
 }
-.sun {
-    display: none;
-} 
-.moon{
-    display: none;
-} 
-.vaguesection{
+
+h3{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    color: #99c1b9;
+}
+
+.textTopPage{
+    text-align: center;
+    color: #99c1b9;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 4rem 3rem 4rem 3rem;
+    font-size: 2.5rem;
+}
+#waveDay, #waveNight{
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+}
+
+
+
+.navLien{
+    /* background-color: #f1e3d3; */
+    background-color: #f1e3d3;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navImg{
+    width: 4rem;
+}
+
+.ulIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.buttonIcon {
+  border: solid 1px #99c1b9;
+  border-radius: 50px;
+  padding-left: 0.5px;
+  background-color: #f1e3d3;
+}
+
+.night {
+  display: none;
+}
+
+.midPageSkills{
+    background-color: #8AB9B0;
+    height: 100vh;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    padding: 6rem 3rem;
+}
+
+
+
+.photoProfil{
+    border: #ffffff solid 10px;
+    border-radius: 50%;
+    opacity: 90%;
+    width: 45vw;
+    filter: grayscale(100%);
+}
+
+h2, .midPageSkills {
+    color: #fdfaff;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: center;
+}
+
+.frontEnd{
+    margin-bottom: 1.5rem ;
+}
+
+.BackEnd, .OtherSkills{
+    border-top: #ffffff solid 4px;
+    width: 80vw;
+    margin-bottom: 1.5rem ;
+}
+
+.midPageProject{
+    background-color: #f1e3d3;
+    height: 150vh;
+    text-align: center;
+    padding: 6rem 3rem;
+    font-weight: bold;
+    font-size:2rem;
+    position: relative;
+}
+
+
+
+.day.window, .night.window  {
+  /* color: aqua; */
+  width: 16rem;
+  padding: 1rem 0;
+}
+
+#wave {
+  width: 100vw;
+}
+
+header div li img {
+  width: 35px;
+  padding-left: 4px;
+}
+
+mark{
+   background-color: #8E7DBE;
+   font-family: "Jersey 25", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+#waveFooterDay, #waveFooterNight{
+    width: 100vw;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+footer {
+    padding-top: 4rem;
+    height: 100vh;
+    background-color: #8AB9B0;
+}
+
+.darkTheme{
+    color: #E0AAFF ;
+}
+
+.darkThemeWriteBlack{
+    color: #29272A;
+}
+.darkThemeThing{
+    background-color: #29272A;
+    border-color: #E0AAFF;
+}
+
+.darkThemeSection{
+    background-color: #E0AAFF;
+}
+
+.darkThemePurple{
+    background-color: #774069;
+};
+
+/* ////////////////////////// */
+/* .vaguesection{
     width: 100vw;
     position: absolute;
     bottom: -0.1rem;
@@ -109,24 +267,16 @@ h1, h2{
     object-fit:cover;
    }
 
-.vague2 {
-    width: 100vw;
-    display: none;
-   }
-
-.logo__nuit {
-    display: none;
-    overflow-x: hidden;
-}
 .nav{
-    /* border-top: solid rgb(139, 185, 176, 0.6) 5px; */
+    /* border-top: solid rgb(139, 185, 176, 0.6) 5px; 
     font-family: "Farsan", cursive;
     box-sizing: border-box;
     position: fixed;
     bottom: 0;
     z-index: 1;
-}
-nav ul{
+}*/
+
+/* nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -196,8 +346,8 @@ main section div p{
     padding-top: 2em;
     display: block;
     /* text-align: center; */
-}  
-.pmilieu h4{
+
+/* .pmilieu h4{
     font-size: 1.5rem;
     color: #635d72;
     font-family: "Farsan", cursive;
@@ -216,7 +366,7 @@ main section div p{
 .lasth4 {
     padding-bottom: 180px;
 }
-
+*
 .themedark{
     background-color: #10002b;
     color: #e0aaff;
@@ -233,8 +383,8 @@ main section div p{
  
  #ordinight, #contactnight, #selfnight{
     display: none;
-}
-@media (min-width: 600px) {
+}  */
+/* @media (min-width: 600px) {
 
     header{
     display: flex;
@@ -301,7 +451,7 @@ main section div p{
     /* .pmilieu__a{
         width: 50vw;
     } */
-    .picture{
+/* .picture{
         margin-bottom: 10rem;
         display: flex;
         justify-content: space-evenly;
@@ -324,9 +474,9 @@ main section div p{
         transition-duration: 0.5s;
         transform: scale(1.1);
     }  
-}
+} */
 
-@media (min-width: 801px) {
+/* @media (min-width: 801px) {
     
 }
 @media (min-width: 1025px) {
@@ -334,4 +484,4 @@ main section div p{
 }
 @media (min-width: 1600px) {
 
-}
+}  */

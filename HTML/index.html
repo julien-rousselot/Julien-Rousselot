@@ -1,99 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julien Rousselot</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
 
-<link rel="stylesheet" href="../CSS/Reset.css">
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-<body>
-    <div class="container ">
-        <section class="section1">
-            
-            <Header>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <section class="topPage">
+        <header>
+            <div class="topPageDiv">
                 <h1>Julien Rousselot</h1>
-                <span><img id="lumiereday" src="../image/light.svg" alt="lumiere"></span> 
-                <span><img class="night" id="lumiereday" src="../image/light.svg" alt="lumiere"></span> 
+            <!-- <span><img class="day" id="lampDay" src="../image/light.svg" alt="lumiere"></span> 
+                 <span><img class="night" id="lampNight" src="../image/light.svg" alt="lumiere"></span>  -->
 
-
-                <div class="navreseau"> 
-                    <ul>
-                        <li><button class="day logo__jour" href="https://github.com/julien-rousselot"><img class="iconreseau" src="../image/gitlogo.svg" alt="Github"></img></a></li>
-                        <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img class="iconreseau" src="../image/gitlogopink.svg" alt="Github"> </img></a></li>
-                        <li><a class="day logo__jour" href="https://www.linkedin.com/in/julien-rousselot-879775254/"><img class="iconreseau" src="../image/linkedinlogo.svg" alt="Linkedin"></img></a></li>
-                        <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img class="iconreseau" src="../image/linkedinnpink.svg" alt="Github"></img></a></li>
-                        <li><a class="day logo__jour" href="julienrousselot.com"><img class="iconreseau" src="../image/whatsapp.svg" alt="contact"></img></a></li>
-                        <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img class="iconreseau" src="../image/whatsapppink.svg" alt="Github"></img></a></li>
+                <div class="navIcon"> 
+                    <ul class="ulIcon">
+                        <li class="theme day"><button class="buttonIcon"><img src="../image/sun.svg" id="sunButton" alt="click for dark theme"></button></li>
+                        <li class="theme night"><button class="buttonIcon"><img src="../image/moonnight.svg" id="moonButton" alt="click for day theme"></button></li>
+                        
+                        <li class="day"><a class="day logo__jour" href="https://github.com/julien-rousselot"><img  src="../image/gitlogo.svg" alt="Github"></img></a></li>
+                        <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img  src="../image/gitlogopink.svg" alt="Github"> </img></a></li>
+                        <li class="day"><a class="day logo__jour" href="https://www.linkedin.com/in/julien-rousselot-879775254/"><img  src="../image/linkedinlogo.svg" alt="Linkedin"></img></a></li>
+                        <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img  src="../image/linkedinnpink.svg" alt="Github"></img></a></li>
+                        <li class="day"><a class="day logo__jour" href="julienrousselot.com"><img  src="../image/whatsapp.svg" alt="contact"></img></a></li>
+                        <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img  src="../image/whatsapppink.svg" alt="Github"></img></a></li>
                     </ul>
-                </div>
-                
-            </Header>
-            <main>
-                
-                <section class="firstPage" >
-                    <div class="main__section__div">
-                        <h2>Bienvenu</h2> 
-                        <p>Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio repudiandae. Ea adipisci assumenda quae veniam quaerat autem ratione perspiciatis..</p>
-                    </div>
-                    <div class="picture">
-                        <img id="selfday" class="hoverimage" src="../image/picturemyself.svg" alt="mon profil">
-                        <img id="selfnight" class="hoverimage" src="../image/picturemyselfnight.svg" alt="mon profil">
-
-                        <a href="#pmilieu" id="ordiday"> <img id="ordiday"class="hoverimage" src="../image/ordiclavier.svg" alt="ordi projet"></a>
-                        <!--  rajouter le href au mode nuit -->
-                        <a href="#" id="contactday"><img  class="hoverimage" src="../image/canape.svg" alt="contact"></a>
-                        <a href="#" id="contactnight"><img  class="hoverimage" src="../image/canapenight.svg" alt="contact"></a>
-                    </div>  
-                </section>
-
-                    <div class="vaguesection">
-                        <img src="../image/vague.svg" alt="vague" id="vague" class="vague">
-                        <img src="../image/vague rose.svg" alt="vague" id="vague2" class="vague2">
-                    </div>
-            </section>
-                <section class="pmilieu" id="pmilieu">
-                    <span><a class="projet" href="julienrousselot.com">
-                        <img class="vintageItemsJour" src="../image/ecranwebjour.svg" alt="page web"></img>
-                        <img class="vintageItemsNight" src="../image/ecranwebnuit.svg" alt="page web"></img></a>
-                        <h3>Un instant pour soi</h3></span>
-                    <span><a class="projet" href="julienrousselot.com">
-                        <img class="vintageItemsJour" src="../image/ecranwebjour.svg" alt="page web"></img>
-                        <img class="vintageItemsNight" src="../image/ecranwebnuit.svg" alt="page web"></img></a>
-                        <h3>École Fatima</h3></span>
-                    <span><a class="projet" href="julienrousselot.com">
-                        <img class="vintageItemsJour" src="../image/ecranwebjour.svg" alt="page web"></img>
-                        <img class="vintageItemsNight" src="../image/ecranwebnuit.svg" alt="page web"></img></a>
-                        <h3>Acting intense</h3></span>
-                    <span><a class="projet" href="julienrousselot.com">
-                        <img class="vintageItemsJour" src="../image/ecranwebjour.svg" alt="page web"></img>
-                        <img class="vintageItemsNight" src="../image/ecranwebnuit.svg" alt="page web"></img></a>
-                        <h3 class="lasth4">Pixel prés</h3></span>
-                </section>
-            </section>
-
-            <section class="pmilieu" id="endPage">
-                <form action="" id="formMail">
-                    <input type="text" maxlength="255">
-                    <button type="submit">Envoyer</button>
-                </form>
-            </section>
-                <script src="../JS/portfolio.js"></script>
-            </main>
-            <footer> 
-                <nav class="nav">
-                    <ul>
-                        <li><img src="../image/picturemyself.svg" alt="logo bienvenu">Welcome</li>
-                        <li><a href="#pmilieu"><img src="../image/ordiclavier.svg" alt="fusée projet">Projets </a></li>
-                        <li><img class="contact" src="../image/phone.svg" alt="logo contact">Contact </li>
-                    </ul>
-                </nav>
-            </footer>
-    </div>
-</body>
+                 </div>
+                <p  class="textTopPage">
+                     Passionné du code je développe des pages web fait
+                     de différents languages de programmation et frameworks.
+                </p>
+            </div>
+        </header>
+        <div class="navLien">
+            <a href="#"><img class="navImg 1" src="../image/picturemyself.svg" alt="mon profil"></a>
+            <a href="#pmilieu"><img class="navImg 2" src="../image/ordiclavier.svg" alt="ordi projet"></a>
+            <a href="#"><img class="navImg 3" src="../image/canape.svg" alt="contact"></a>
+            <!-- <a href="#"><img class="navImg night" src="../image/picturemyselfnight.svg" alt="mon profil"></a> -->
+            <!-- <a href="#pmilieu"><img class="navImg night" src="../image/ordiclaviernight.svg" alt="ordi projet"></a> -->
+            <!-- <a href="#"><img class="navImg night" src="../image/canapenight.svg" alt="contact"></a>  -->
+        </div>
+        <img src="../image/vague.svg" alt="vague" id="waveDay" class="day">
+        <img src="../image/vague rose.svg" alt="vague" id="waveNight" class="night">
+    </section>
+    
+    <main>
+    <section class="midPageSkills">
+        <img class="photoProfil" src="../image/version5.png" alt="photo de profil perso">
+        <h2>Fullstack spécialisé Frontend</h2>
+        <div class="frontEnd">
+            <h2>Frontend</h2>
+            <p>React | Javascript | Html | Css</p>
+        </div>
+        <div class="BackEnd">
+            <h2>Backend</h2>
+            <p>Php | Laravel | Sql</p>
+        </div>
+        <div class="OtherSkills">
+            <h2>Compétences</h2>
+            <p>Agile | Programmation orientée objet | API</p>
+        </div>
+    </section>
+    <section class="midPageProject">
+        <span>
+            <a class="projet" href="#">
+            <img class="day window" src="../image/ecranwebjour.svg" alt="page web"></img>
+            <img class="night window" src="../image/ecranwebnuit.svg" alt="page web"></img></a>
+            <h3>Un instant pour soi</h3>
+            <!-- <mark>html/css/js/php/laravel</mark> -->
+        </span>
+        <span>
+            <a class="projet" href="#">
+            <img class="day window" src="../image/ecranwebjour.svg" alt="page web"></img>
+            <img class="night window" src="../image/ecranwebnuit.svg" alt="page web"></img></a>
+            <h3>École Fatima</h3>
+            <!-- <mark>html/css/js/php/laravel</mark> -->
+        </span>
+        <span>
+            <a class="projet" href="#">
+            <img class="day window" src="../image/ecranwebjour.svg" alt="page web"></img>
+            <img class="night window" src="../image/ecranwebnuit.svg" alt="page web"></img></a>
+            <h3>Acting intense</h3>
+            <!-- <mark>html/css/js/php/laravel</mark> -->
+        </span>
+        <span>
+            <a class="projet" href="#">
+            <img class="day window" src="../image/ecranwebjour.svg" alt="page web"></img>
+            <img class="night window" src="../image/ecranwebnuit.svg" alt="page web"></img></a>
+            <h3>Pixel prés</h3>
+            <!-- <mark>html/css/js/php/laravel</mark> -->
+        </span>
+        <img src="../image/vague.svg" alt="vague" id="waveFooterDay" class="day">
+        <img src="../image/vague rose.svg" alt="vague" id="waveFooterNight" class="night">
+    </section>
+    </main>  
+    <footer> 
+        <form action="" id="formMail">
+            <input type="text" maxlength="255" name="email">
+            <button type="submit">Envoyer</button>
+        </form>
+    </footer> 
+    <script src="../js/portfolio.js"></script>
+  </body>
 </html>
+ 
