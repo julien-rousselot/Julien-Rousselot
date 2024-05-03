@@ -6,15 +6,18 @@
 /* float: left; */
 
 html {
-  scroll-behavior: smooth;
-/* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .topPage {
-  width: 100vw;
-  height: 100vh;
-  background-color: #f1e3d3;
-  position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1e3d3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .topPageDiv{
@@ -22,15 +25,15 @@ html {
 }
 
 header {
-  padding-top: 0.5rem;
-  height: 10vh;
+    padding-top: 0.5rem;
+    height: 10vh;
 }
 
 h1 {
-  text-align: center;
-  color: #99c1b9;
-  font-family: "Farsan", cursive;
-  font-size: 3rem;
+    text-align: center;
+    color: #99c1b9;
+    font-family: "Farsan", cursive;
+    font-size: 3rem;
 }
 
 h3{
@@ -62,13 +65,9 @@ h3{
     font-size:6rem;
     position: absolute;
     bottom: -7.5rem;
-    z-index: 1;
+    z-index: 2;
 }
 
-.textProjects{
-    left: 26vw;
-
-}
 .spano{
     display: flex;
     justify-content: flex-start;
@@ -84,7 +83,7 @@ h3{
     width: 11vw;
     bottom: 6rem;
     left: 45vw;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: center;
 }
@@ -98,14 +97,14 @@ h3{
     width: 11vw;
     bottom: 6rem;
     left: 45vw;
-    z-index: 2;
+    z-index: 4;
 }
 
 .navLien{
     background-color: #f1e3d3;
     position: fixed;
     bottom: 0;
-    z-index: 2;
+    z-index: 3;
     width: 100vw;
     height: 5.1rem;
     display: flex;
@@ -141,6 +140,7 @@ h3{
     display: flex; 
     align-items: center; 
     flex-direction: column;
+    position: relative;
     padding: 4rem 3rem;
 }
 
@@ -156,7 +156,7 @@ h3{
     font-family: "Farsan", cursive;
     position: absolute;
     bottom: 0;
-    left: 50;
+    /* left: 50; */
 }
 
 .midPageSkills {
@@ -274,6 +274,10 @@ footer {
     border-spacing: 0cm;
 }
 
+.lienFooter:hover {
+   color: #8E7DBE;
+}
+
 .bye{
     position: absolute;
     bottom: -9px;
@@ -303,26 +307,108 @@ footer {
     background-color: #774069;
 };
 
-/* @media (min-width: 600px) {
+@media (min-width: 388px) {
+    .footerContact{
+        padding: 0rem 1rem 4rem 2.2rem;
+    }
 
+    .midPageSkills{
+        height: 100vh;
+    }
 
-    .vintageItemsDay:hover, .vintageItemsNight:hover{
-        transition-duration: 0.5s;
-        transform: scale(1.1);
-    }  
+    .midPageProject {
+        height: 100vh;
+        padding: 9rem 0rem 7rem 0rem;
+    }
+}
 
-    .hoverimage:hover{
-        transition-duration: 0.5s;
-        transform: scale(1.1);
-    }  
-} */
+@media (min-width: 428px) {
+    .midPageSkills{
+        padding-top: 6rem;
+    }
 
-/* @media (min-width: 801px) {
-    
+    .midPageProject {
+        height: 80vh;
+        padding: 7rem 0rem 5rem 0rem;
+    }
+
+    .footerContact{
+        height: 32vh;
+    }
 }
 @media (min-width: 1025px) {
-  
-}
-@media (min-width: 1600px) {
+    .textProjects {
+        position: absolute;
+    }
+    .topPage{
+        height: 110vh;
+    }
 
-}  */
+    .arrowButton{
+        display: none;
+    }
+
+    .navLien{
+        position: absolute;
+        top: 57%;
+    }
+
+    .navImg{
+        width: 17vw;
+        transition: transform .2s;
+     } 
+
+    .navImg:hover{
+        transform: scale(1.1);
+     } 
+
+    #thisone{
+        margin-right: 8px;
+    }
+
+    #thistwo{
+        margin-right: -8px;
+    }
+
+    .projects{
+        font-size: 8rem;
+        bottom: -9.8rem;
+    }
+
+    .photoProfil{
+        width: 27vw;
+    }
+
+    .midPageSkills {
+        padding-bottom: 7rem;
+    }
+
+    .day.window, .night.window {
+        width: 20vw;
+        padding: 0 16px;
+    }
+
+    .midPageProject {
+        height: 85vh;
+    }
+
+    .footerContact {
+        padding: 2rem 1rem 6rem 2.2rem;
+    }
+
+    .bye {
+        font-size: 7rem;
+    }
+}
+@media (min-width: 1900px) {
+    .textProjects {
+        font-size: 10rem;
+        bottom: -11rem;
+    }
+
+    .projects{
+        font-size: 10rem;
+        bottom: -12.2rem;
+
+    }
+} 
