@@ -18,7 +18,7 @@ moonButton.addEventListener("click", () => {
   });
   document.querySelector('.textTopPage').classList.remove('darkTheme');
   document.querySelectorAll('h3').forEach(h3Element => {
-    h3Element.classList.remove('darkThemeWriteBlack');
+    h3Element.classList.remove('darkTheme');
   });
   document.querySelector('.midPageSkills').classList.remove('darkThemeSection');
   document.querySelector('footer').classList.remove('darkThemeSection');
@@ -50,7 +50,7 @@ document.querySelectorAll(".night").forEach(element => {
   });
   document.querySelector('.textTopPage').classList.add('darkTheme');
   document.querySelectorAll('h3').forEach(h3Element => {
-    h3Element.classList.add('darkThemeWriteBlack');
+    h3Element.classList.add('darkTheme');
   });
   document.querySelector('.midPageSkills').classList.add('darkThemeSection');
   document.querySelector('footer').classList.add('darkThemeSection');
