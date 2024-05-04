@@ -1,7 +1,15 @@
 const moonButton = document.getElementById("moonButton");
 const sunButton = document.getElementById("sunButton");
 
-moonButton.addEventListener("click", () => {
+const lampDay = document.getElementById("lampDay");
+const lampNight = document.getElementById("lampNight");
+
+sunButton.addEventListener("click", offLight); 
+moonButton.addEventListener("click", onLight);
+lampDay.addEventListener("click", offLight); 
+lampNight.addEventListener("click", onLight);
+  
+  function onLight(){
   document.querySelectorAll(".night").forEach(element => {
     element.style.display = "none";
   });
@@ -31,9 +39,10 @@ moonButton.addEventListener("click", () => {
       img.src = "../image/canape.svg";
     }
   });
-});
+};
 
-sunButton.addEventListener("click", () => {
+
+function offLight(){
   document.querySelectorAll(".day").forEach(element => {
   element.style.display = "none";
 });
@@ -63,6 +72,6 @@ document.querySelectorAll(".night").forEach(element => {
       img.src = "../image/canapenight.svg";
     }
   });
-});
+};
 
 

@@ -10,6 +10,8 @@ html {
     overflow-x: hidden;
 }
 
+
+
 .topPage {
     width: 100vw;
     height: 100vh;
@@ -27,6 +29,10 @@ html {
 header {
     padding-top: 0.5rem;
     height: 10vh;
+}
+
+#lampDay, #lampNight{
+   display: none;
 }
 
 h1 {
@@ -130,6 +136,12 @@ h3{
   background-color: #f1e3d3;
 }
 
+#textPresentation{
+    font-family: "Farsan", cursive;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
 .night {
   display: none;
 }
@@ -169,15 +181,10 @@ h3{
     position: relative;
 }
 
-.frontEnd{
-    margin-bottom: 1.5rem ;
+.frontEnd, .BackEnd, .OtherSkills{
+    display: none;
 }
 
-.BackEnd, .OtherSkills{
-    border-top: #ffffff solid 4px;
-    width: 80vw;
-    margin-bottom: 1.5rem ;
-}
 
 .midPageProject{
     background-color: #f1e3d3;
@@ -337,9 +344,38 @@ footer {
     }
 }
 @media (min-width: 1025px) {
+
+    #lampDay{
+        display: block;
+        position: absolute;
+        width: 15vh;
+        top: 0;
+        left: 20vw;
+        z-index: 1;
+        
+    }
+
+    #lampNight{
+        display: none;
+        position: absolute;
+        width: 15vh;
+        top: 0;
+        left: 20vw;
+        z-index: 1;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
     .textProjects {
         position: absolute;
     }
+
     .topPage{
         height: 110vh;
     }
@@ -350,7 +386,7 @@ footer {
 
     .navLien{
         position: absolute;
-        top: 57%;
+        top: 62%;
     }
 
     .navImg{
@@ -370,17 +406,33 @@ footer {
         margin-right: -8px;
     }
 
+    .frontEnd{
+        display: block;
+        margin-bottom: 1.5rem ;
+    }
+
+    .frontEnd p, .BackEnd p, .OtherSkills p{
+        font-family: "Farsan", cursive;
+    }
+    
+    .BackEnd, .OtherSkills{
+        display: block;
+        border-top: #ffffff solid 4px;
+        width: 80vw;
+        margin-bottom: 1.5rem ;
+    }
     .projects{
         font-size: 8rem;
         bottom: -9.8rem;
     }
 
     .photoProfil{
-        width: 27vw;
+        width: 20vw;
     }
 
     .midPageSkills {
         padding-bottom: 7rem;
+        height: 130vh;
     }
 
     .day.window, .night.window {
@@ -401,6 +453,14 @@ footer {
     }
 }
 @media (min-width: 1900px) {
+    h1{
+        font-size: 9rem;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+
     .textProjects {
         font-size: 10rem;
         bottom: -11rem;
@@ -409,6 +469,14 @@ footer {
     .projects{
         font-size: 10rem;
         bottom: -12.2rem;
+    }
 
+    .midPageSkills {
+        padding-bottom: 7rem;
+        height: 95vh;
+    }
+
+    .imgNetwork{
+        width: 4rem;
     }
 } 
