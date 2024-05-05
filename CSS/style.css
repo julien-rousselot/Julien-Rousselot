@@ -292,6 +292,10 @@ footer {
     font-family: "Jersey 25", sans-serif;
 }
 
+.portait{
+    display: none;
+}
+
 .darkTheme{
     color: #E0AAFF ;
 }
@@ -360,6 +364,34 @@ footer {
         left: 20vw;
         z-index: 1;
     }
+
+    section span { 
+        position: relative;
+    }
+
+    section span:hover .portait{
+        display: block;
+        position: absolute;
+        top: 0rem;
+        right: 1.02rem;
+        opacity: 0;
+        animation: fadeIn 1s ease forwards;
+        width: 15rem;
+   }    
+   
+   .portait{
+        border: #545454 solid 2px;
+        border-radius: 8%;
+   }
+
+   @keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+  }
 
     h1{
         font-size: 5rem;
