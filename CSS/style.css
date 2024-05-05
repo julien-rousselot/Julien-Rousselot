@@ -365,23 +365,31 @@ footer {
         z-index: 1;
     }
 
-    section span { 
+    section div { 
         position: relative;
     }
 
-    section span:hover .portait{
+    .divPortrait{
+        width: 23vw;
+    }
+
+    .day.window, .night.window{
+        width: 100%;
+    }
+
+    section div:hover .portait{
         display: block;
         position: absolute;
         top: 0rem;
-        right: 1.02rem;
+        right: 6.5%;
         opacity: 0;
         animation: fadeIn 1s ease forwards;
-        width: 15rem;
    }    
    
    .portait{
         border: #545454 solid 2px;
         border-radius: 8%;
+        height: 80%;
    }
 
    @keyframes fadeIn {
