@@ -10,8 +10,6 @@ html {
     overflow-x: hidden;
 }
 
-
-
 .topPage {
     width: 100vw;
     height: 100vh;
@@ -352,7 +350,6 @@ footer {
         top: 0;
         left: 20vw;
         z-index: 1;
-        
     }
 
     #lampNight{
