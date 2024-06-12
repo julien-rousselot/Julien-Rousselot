@@ -29,7 +29,7 @@ header {
     height: 10vh;
 }
 
-#lampDay{
+#lamp{
    display: none;
 }
 
@@ -138,6 +138,10 @@ h3{
     font-family: "Farsan", cursive;
     font-size: 1.6rem;
     line-height: 2.5rem;
+}
+
+.night {
+  display: none;
 }
 
 .midPageSkills{
@@ -343,7 +347,7 @@ footer {
 }
 @media (min-width: 1025px) {
 
-    #lampDay{
+    #lamp{
         display: block;
         position: absolute;
         width: 15vh;

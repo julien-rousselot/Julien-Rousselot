@@ -1,13 +1,11 @@
 const moonButton = document.getElementById("moonButton");
 const sunButton = document.getElementById("sunButton");
 
-const lampDay = document.getElementById("lampDay");
-const lampNight = document.getElementById("lampNight");
+const lamp = document.getElementById("lamp");
 
 sunButton.addEventListener("click", offLight); 
 moonButton.addEventListener("click", onLight);
-lampDay.addEventListener("click", offLight); 
-lampNight.addEventListener("click", onLight);
+lamp.addEventListener("click", offLight); 
   
   function onLight(){
   document.querySelectorAll(".night").forEach(element => {
@@ -16,7 +14,7 @@ lampNight.addEventListener("click", onLight);
   document.querySelectorAll(".day").forEach(element => {
     element.style.display = "flex";
   });
-  lampDay.scr = "../image/light.svg";
+  lamp.scr = "image/light.svg";
   document.querySelector('h1').classList.remove('darkTheme');
   document.querySelector('.topPage').classList.remove('darkThemeThing');
   document.querySelector('.midPageProject').classList.remove('darkThemePurple');
@@ -33,11 +31,11 @@ lampNight.addEventListener("click", onLight);
   document.querySelector('footer').classList.remove('darkThemeSection');
   document.querySelectorAll('.navImg').forEach((img, index) => {
     if (index === 0) {
-      img.src = "../image/picturemyself.svg";
+      img.src = "image/picturemyself.svg";
     } else if (index === 1) {
-      img.src = "../image/ordiclavier.svg";
+      img.src = "image/ordiclavier.svg";
     } else if (index === 2) {
-      img.src = "../image/canape.svg";
+      img.src = "image/canape.svg";
     }
   });
 };
@@ -47,7 +45,7 @@ function offLight(){
   document.querySelectorAll(".day").forEach(element => {
   element.style.display = "none";
 });
-lampDay.scr = "../image/lightnight.svg";
+lamp.scr = "image/lightnight.svg";
 document.querySelectorAll(".night").forEach(element => {
   element.style.display = "flex";
   });
@@ -67,11 +65,11 @@ document.querySelectorAll(".night").forEach(element => {
   document.querySelector('footer').classList.add('darkThemeSection');
   document.querySelectorAll('.navImg').forEach((img, index) => {
     if (index === 0) {
-      img.src = "../image/picturemyselfnight.svg";
+      img.src = "image/picturemyselfnight.svg";
     } else if (index === 1) {
-      img.src = "../image/ordiclaviernight.svg";
+      img.src = "image/ordiclaviernight.svg";
     } else if (index === 2) {
-      img.src = "../image/canapenight.svg";
+      img.src = "image/canapenight.svg";
     }
   });
 };
