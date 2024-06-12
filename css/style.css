@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Condensed:ital,wght@0,100;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farsan&family=Major+Mono+Display&family=Roboto+Condensed:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+/* Display block avec ajout de float, une size sur le premier block et le deuxieme prendra la place restante donc pas de taille en largeur */
+/* float: left; */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.topPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1e3d3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topPageDiv{
+    position: relative;
+}
+
+header {
+    padding-top: 0.5rem;
+    height: 10vh;
+}
+
+#lampDay{
+   display: none;
+}
+
+h1 {
+    text-align: center;
+    color: #99c1b9;
+    font-family: "Farsan", cursive;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 1.4rem;
+    color: #8E7DBE;
+}
+
+.textTopPage{
+    text-align: center;
+    color: #99c1b9;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 4rem 3rem 4rem 3rem;
+    font-size: 2.5rem;
+}
+#waveDay, #waveNight{
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+}
+
+.projects{
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8E7DBE;
+    font-size:6rem;
+    position: absolute;
+    bottom: -7.5rem;
+    z-index: 2;
+}
+
+.spano{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 10px;
+}
+
+.arrowButton{
+    position: fixed;
+    border: solid 1px rgb(41, 39, 42, 0.3);
+    background-color: #f1e3d3 ;
+    box-shadow: 0px 2px #99c1b9;
+    border-radius: 25px;
+    width: 11vw;
+    bottom: 6rem;
+    left: 45vw;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.arrowButtonDark{
+    position: fixed;
+    border: solid 1px rgb(41, 39, 42, 0.3);
+    background-color: #E0AAFF ;
+    box-shadow: 0px 2px #8E7DBE;
+    border-radius: 25px;
+    width: 11vw;
+    bottom: 6rem;
+    left: 45vw;
+    z-index: 4;
+}
+
+.navLien{
+    background-color: #f1e3d3;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 5.1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navImg{
+    width: 4rem;
+}
+
+.ulIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.buttonIcon {
+  border: solid 1px #99c1b9;
+  border-radius: 50px;
+  padding-left: 0.5px;
+  background-color: #f1e3d3;
+}
+
+#textPresentation{
+    font-family: "Farsan", cursive;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.midPageSkills{
+    background-color: #8AB9B0;
+    /* height: 100vh; */
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    position: relative;
+    padding: 4rem 3rem;
+}
+
+.photoProfil{
+    border: #ffffff solid 10px;
+    border-radius: 50%;
+    opacity: 90%;
+    width: 45vw;
+    filter: grayscale(100%);
+}
+
+.profilText {
+    font-family: "Farsan", cursive;
+    position: absolute;
+    bottom: 0;
+    /* left: 50; */
+}
+
+.midPageSkills {
+    color: #fdfaff;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+}
+
+.frontEnd, .BackEnd, .OtherSkills{
+    display: none;
+}
+
+
+.midPageProject{
+    background-color: #f1e3d3;
+    height: 80vh;
+    text-align: center;
+    padding: 7rem 0rem 10rem 0rem ;
+    font-size:2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.day.window, .night.window  {
+  width: 10rem;
+  padding: 0 10px;
+}
+
+#wave {
+  width: 100vw;
+}
+
+header div li img {
+  width: 35px;
+  padding-left: 4px;
+}
+
+mark{
+   background-color: #8E7DBE;
+   font-family: "Jersey 25", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+#waveFooterDay, #waveFooterNight{
+    width: 100vw;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+footer {
+    height: 100vh;
+    background-color: #8AB9B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContact{
+    position: relative;
+    background-color: #F3F8F7;
+    /* background-color: #29272A; */
+    width: 70vw;
+    height: 40vh;
+    border-radius: 5px;
+    padding: 0rem 1rem 4rem 2.2rem;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    line-height:30px;
+}
+
+.footerContact, .footerContact a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: #29272A;  
+    /* color: #F3F8F7;   */
+    text-decoration: none; 
+    padding-top: 2rem;
+    word-spacing: 4px;
+}
+
+.footerContact{
+    font-size: larger;
+}
+
+.footerContact a {
+    font-weight: bold;
+}
+
+.footerContact h4{
+    font-size: 1.4rem;
+}
+
+.ulFooter{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+.lienFooter {
+    padding-top: 1.5rem;
+    border-bottom: #8AB9B0 solid 1px;
+    border-spacing: 0cm;
+}
+
+.lienFooter:hover {
+   color: #8E7DBE;
+}
+
+.bye{
+    position: absolute;
+    bottom: -9px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #8E7DBE;
+    font-family: "Jersey 25", sans-serif;
+}
+
+.portait{
+    display: none;
+}
+
+.darkTheme{
+    color: #E0AAFF ;
+}
+
+.darkThemeWriteBlack{
+    color: #29272A;
+}
+.darkThemeThing{
+    background-color: #29272A;
+    border-color: #E0AAFF;
+}
+
+.darkThemeSection{
+    background-color: #E0AAFF;
+}
+
+.darkThemePurple{
+    background-color: #774069;
+};
+
+@media (min-width: 388px) {
+    .footerContact{
+        padding: 0rem 1rem 4rem 2.2rem;
+    }
+
+    .midPageSkills{
+        height: 100vh;
+    }
+
+    .midPageProject {
+        height: 100vh;
+        padding: 9rem 0rem 7rem 0rem;
+    }
+}
+
+@media (min-width: 428px) {
+    .midPageSkills{
+        padding-top: 6rem;
+    }
+
+    .midPageProject {
+        height: 80vh;
+        padding: 7rem 0rem 5rem 0rem;
+    }
+
+    .footerContact{
+        height: 32vh;
+    }
+}
+@media (min-width: 1025px) {
+
+    #lampDay{
+        display: block;
+        position: absolute;
+        width: 15vh;
+        top: 0;
+        left: 20vw;
+        z-index: 1;
+    }
+
+    section div { 
+        position: relative;
+    }
+
+    .divPortrait{
+        width: 23vw;
+    }
+
+    .day.window, .night.window{
+        width: 100%;
+    }
+
+    section div:hover .portait{
+        display: block;
+        position: absolute;
+        top: 0rem;
+        right: 6.5%;
+        opacity: 0;
+        animation: fadeIn 1s ease forwards;
+   }    
+   
+   .portait{
+        border: #545454 solid 2px;
+        border-radius: 8%;
+        height: 80%;
+   }
+
+   @keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+  }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .textProjects {
+        position: absolute;
+    }
+
+    .topPage{
+        height: 110vh;
+    }
+
+    .arrowButton{
+        display: none;
+    }
+
+    .navLien{
+        position: absolute;
+        top: 62%;
+    }
+
+    .navImg{
+        width: 17vw;
+        transition: transform .2s;
+     } 
+
+    .navImg:hover{
+        transform: scale(1.1);
+     } 
+
+    #thisone{
+        margin-right: 8px;
+    }
+
+    #thistwo{
+        margin-right: -8px;
+    }
+
+    .frontEnd{
+        display: block;
+        margin-bottom: 1.5rem ;
+    }
+
+    .frontEnd p, .BackEnd p, .OtherSkills p{
+        font-family: "Farsan", cursive;
+    }
+    
+    .BackEnd, .OtherSkills{
+        display: block;
+        border-top: #ffffff solid 4px;
+        width: 80vw;
+        margin-bottom: 1.5rem ;
+    }
+    .projects{
+        font-size: 8rem;
+        bottom: -9.8rem;
+    }
+
+    .photoProfil{
+        width: 20vw;
+    }
+
+    .midPageSkills {
+        padding-bottom: 7rem;
+        height: 130vh;
+    }
+
+    .day.window, .night.window {
+        width: 20vw;
+        padding: 0 16px;
+    }
+
+    .midPageProject {
+        height: 85vh;
+    }
+
+    .footerContact {
+        padding: 2rem 1rem 6rem 2.2rem;
+    }
+
+    .bye {
+        font-size: 7rem;
+    }
+}
+@media (min-width: 1900px) {
+    h1{
+        font-size: 9rem;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+
+    .textProjects {
+        font-size: 10rem;
+        bottom: -11rem;
+    }
+
+    .projects{
+        font-size: 10rem;
+        bottom: -12.2rem;
+    }
+
+    .midPageSkills {
+        padding-bottom: 7rem;
+        height: 95vh;
+    }
+
+    .imgNetwork{
+        width: 4rem;
+    }
+} 
