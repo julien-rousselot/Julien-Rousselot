@@ -29,7 +29,7 @@ header {
     height: 10vh;
 }
 
-#lampDay, #lampNight{
+#lampDay{
    display: none;
 }
 
@@ -138,10 +138,6 @@ h3{
     font-family: "Farsan", cursive;
     font-size: 1.6rem;
     line-height: 2.5rem;
-}
-
-.night {
-  display: none;
 }
 
 .midPageSkills{
@@ -349,15 +345,6 @@ footer {
 
     #lampDay{
         display: block;
-        position: absolute;
-        width: 15vh;
-        top: 0;
-        left: 20vw;
-        z-index: 1;
-    }
-
-    #lampNight{
-        display: none;
         position: absolute;
         width: 15vh;
         top: 0;

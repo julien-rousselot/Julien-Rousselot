@@ -16,6 +16,7 @@ lampNight.addEventListener("click", onLight);
   document.querySelectorAll(".day").forEach(element => {
     element.style.display = "flex";
   });
+  lampDay.scr = "../image/light.svg";
   document.querySelector('h1').classList.remove('darkTheme');
   document.querySelector('.topPage').classList.remove('darkThemeThing');
   document.querySelector('.midPageProject').classList.remove('darkThemePurple');
@@ -46,6 +47,7 @@ function offLight(){
   document.querySelectorAll(".day").forEach(element => {
   element.style.display = "none";
 });
+lampDay.scr = "../image/lightnight.svg";
 document.querySelectorAll(".night").forEach(element => {
   element.style.display = "flex";
   });
