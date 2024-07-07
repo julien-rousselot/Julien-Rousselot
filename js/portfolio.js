@@ -5,7 +5,7 @@ const lamp = document.getElementById("lamp");
 
 sunButton.addEventListener("click", offLight); 
 moonButton.addEventListener("click", onLight);
-lamp.addEventListener("click", offLight); 
+// lamp.addEventListener("click", offLight); 
   
   function onLight(){
   document.querySelectorAll(".night").forEach(element => {
@@ -14,7 +14,7 @@ lamp.addEventListener("click", offLight);
   document.querySelectorAll(".day").forEach(element => {
     element.style.display = "flex";
   });
-  lamp.scr = "image/light.svg";
+  // lamp.scr = "image/lightnight.svg";
   document.querySelector('h1').classList.remove('darkTheme');
   document.querySelector('.topPage').classList.remove('darkThemeThing');
   document.querySelector('.midPageProject').classList.remove('darkThemePurple');
@@ -45,7 +45,7 @@ function offLight(){
   document.querySelectorAll(".day").forEach(element => {
   element.style.display = "none";
 });
-lamp.scr = "image/lightnight.svg";
+// lamp.scr = "image/light.svg";
 document.querySelectorAll(".night").forEach(element => {
   element.style.display = "flex";
   });

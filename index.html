@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julien Rousselot</title>
+    <link rel="icon" href="image\siteLogo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,9 +16,9 @@
   </head>
   <body>
     <section id="topPage" class="topPage">
-        <a href="#topPage"><button class="btnTop arrowButton"><img src="image/fleche-vers-le-haut.png" alt="fleche de retour page superieur"></button></a>
+        <a href="#topPage"><button class="btnTop arrowButton"><img src="image\fleche-haut.svg" alt="fleche de retour page superieur"></button></a>
         <div class="lightChange">
-            <img id="lamp" src="image/light.svg" alt="lumiere">
+            <!-- <img id="lamp" src="image/light.svg" alt="lumiere"> -->
             <!-- <img class="night" id="lampNight" src="../image/lightnight.svg" alt="lumieredark"> -->
         </div>
         <header>
@@ -32,10 +33,8 @@
                         <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img class="imgNetwork" src="image/gitlogopink.svg" alt="Github"> </img></a></li>
                         <li class="day"><a class="day logo__jour" href="https://www.linkedin.com/in/julien-rousselot-879775254/"><img class="imgNetwork" src="image/linkedinlogo.svg" alt="Linkedin"></img></a></li>
                         <li class="night"><a class="night logo__nuit" href="https://www.linkedin.com/in/julien-rousselot-879775254/"><img class="imgNetwork" src="image/linkedinnpink.svg" alt="Linkedin"></img></a></li>
-                        <li class="day"><a class="day logo__jour" href="#pdfcv"><img class="imgNetwork" src="image/whatsapp.svg" alt="CV"></img></a></li>
-                        <li class="night"><a class="night logo__nuit" href="#pdfcv"><img class="imgNetwork" src="image/whatsapppink.svg" alt="CV"></img></a></li>
-                        <!-- <embed src= width=800 height=500 type='application/pdf'/> -->
-                        <!-- Pour ajouter notre CV en pdf -->
+                        <li class="day"><a class="day logo__jour" href="assets/JulienRousselotCV.pdf" target="_blank"><img class="imgNetwork" src="image\cvDay.svg" alt="CV"></img></a></li>
+                        <li class="night"><a class="night logo__nuit" href="assets/JulienRousselotCV.pdf" target="_blank"><img class="imgNetwork" src="image\cvNight.svg" alt="CV"></img></a></li>
                     </ul>
                  </div>
                 <p  class="textTopPage">
@@ -63,78 +62,154 @@
             Ce parcours m'a conduit à explorer différents langages et frameworks. <br>
             À l'affût des dernières tendances technologiques je m'efforce d'améliorer mes compétences chaque jour.
         </p>
-        <div class="frontEnd">
+        <div class="skills">
             <h2>Frontend</h2>
-            <p>React | Javascript | Html | Css</p>
-            <!-- Mettre des logos -->
+            <div class="skillsDiv one">
+                <div class="skillCard">
+                    <img src="image\react.svg" alt="React">
+                    <h4>React</h4>
+                </div>
+                <div class="skillCard"> 
+                    <img src="image\typescript.svg" alt="Typescript">
+                    <h4>Typescript</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\tailwind.svg" alt="Tailwind">
+                    <h4>Tailwind</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\Javascript.svg" alt="Javascript">
+                    <h4>Javascript</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\html.svg" alt="Html">
+                    <h4>Html</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\css.svg" alt="Css">
+                    <h4>Css</h4>
+                </div>
+            </div>
         </div>
-        <div class="BackEnd">
+        <div class="skills">
             <h2>Backend</h2>
-            <p>Php | Laravel | Sql | Mysql</p>
-            <!-- Mettre des logos -->
+            <div class="skillsDiv">
+                <div class="skillCard">
+                    <img src="image\php.svg" alt="Php">
+                    <h4>Php</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\laravel.svg" alt="Laravel">
+                    <h4>Laravel</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\sql.svg" alt="Sql">
+                    <h4>Sql</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\mySql.svg" alt="Mysql">
+                    <h4>Mysql</h4>
+                </div>
+            </div>
         </div>
-        <div class="OtherSkills">
-            <h2>Compétences</h2>
-            <p>API | Programmation orientée objet | Agile</p>
-            <!-- Mettre des logos -->
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="skillsDiv">
+                <div class="skillCard">
+                    <img src="image\api.svg" alt="API">
+                    <h4>API</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\docker.svg" alt="Docker">
+                    <h4>Docker</h4>
+                </div>
+                <div class="skillCard">
+                    <img src="image\agile.svg" alt="Agile">
+                    <h4>Agile</h4>
+                </div>
+            </div>
         </div>
         <h2 class="projects">Projets</h2>
     </section>
     <section id="midPageProjectId" class="midPageProject">
         <span>
             <a class="projet" href="#">
-            <div><img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
-            <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img></a>
-            <img class="portait" src="image/94236.jpg" alt="imagesite"></div>
+                <div>
+                    <img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
+                    <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img>
+                    <!-- <img class="portait" src="image/94236.jpg" alt="imagesite"> -->
+                </div>
+            </a>
             <span class="spano"><h3>Un instant pour soi</h3></span>
         </span>
         <span>
             <a class="projet" href="#">
-            <div><img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
-            <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img></a>
-            <img class="portait" src="image/94236.jpg" alt="imagesite"></div>
-            <span class="spano"><h3>École Fatima</h3></span>
+                <div>
+                    <img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
+                    <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img>
+                    <!-- <img class="portait" src="image/94236.jpg" alt="imagesite"> -->
+                </div>
+            </a>
+            <span class="spano"><h3>O'play</h3></span>
         </span>
         <span>
             <a class="projet" href="#">
-            <div><img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
-            <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img></a>
-            <img class="portait" src="image/94236.jpg" alt="imagesite"></div>
-            <span class="spano"><h3>Acting intense</h3></span>
-        </span>
-        <span>
-            <a class="projet" href="#">
-            <div><img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
-            <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img></a>
-            <img class="portait" src="image/94236.jpg" alt="imagesite"></div>
-            <span class="spano"><h3>Pixel prés</h3></span>
-        </span>
-        <span>
-            <a class="projet" href="#">
-            <div><img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
-            <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img></a>
-            <img class="portait" src="image/94236.jpg" alt="imagesite"></div>
+                <div>
+                    <img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
+                    <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img>
+                    <!-- <img class="portait" src="image/94236.jpg" alt="imagesite"> -->
+                </div>
+            </a>
             <span class="spano"><h3>En cours..</h3></span>
         </span>
         <span>
             <a class="projet" href="#">
-            <div><img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
-            <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img></a>
-            <img class="portait" src="image/94236.jpg" alt="imagesite"></div>
+                <div>
+                    <img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
+                    <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img>
+                    <!-- <img class="portait" src="image/94236.jpg" alt="imagesite"> -->
+                </div>
+            </a>
             <span class="spano"><h3>En cours..</h3></span>
         </span>
         <span>
             <a class="projet" href="#">
-            <div><img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
-            <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img></a>
-            <img class="portait" src="image/94236.jpg" alt="imagesite"></div>
+                <div>
+                    <img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
+                    <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img>
+                    <!-- <img class="portait" src="image/94236.jpg" alt="imagesite"> -->
+                </div>
+            </a>
             <span class="spano"><h3>En cours..</h3></span>
         </span>
         <span>
             <a class="projet" href="#">
-            <div><img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
-            <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img></a>
-            <img class="portait" src="image/94236.jpg" alt="imagesite"></div>
+                <div>
+                    <img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
+                    <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img>
+                    <!-- <img class="portait" src="image/94236.jpg" alt="imagesite"> -->
+                </div>
+            </a>
+            <span class="spano"><h3>En cours..</h3></span>
+        </span>
+        <span>
+            <a class="projet" href="#">
+                <div>
+                    <img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
+                    <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img>
+                    <!-- <img class="portait" src="image/94236.jpg" alt="imagesite"> -->
+                </div>
+            </a>
+            <span class="spano"><h3>En cours..</h3></span>
+        </span>
+        <span>
+            <a class="projet" href="#">
+                <div>
+                    <img class="day window" src="image/ecranwebjour.svg" alt="page web"></img>
+                    <img class="night window" src="image/ecranwebnuit.svg" alt="page web"></img>
+                    <!-- <img class="portait" src="image/94236.jpg" alt="imagesite"> -->
+                </div>
+            </a>
             <span class="spano"><h3>En cours..</h3></span>
         </span>
         <img src="image/vague.svg" alt="vague" id="waveFooterDay" class="day">
@@ -146,16 +221,16 @@
             <h4>Pour en parler.</h4>
             <p><a class="lienFooter" href="mailto:julienrousselot.dev@gmail.com">Envoie un email</a> à julienrousselot.dev@gmail.com <br> ou texte-moi sur les réseaux sociaux.</p>
             <ul class="ulFooter">
-                <li class="day"><a class="day logo__jour" href="https://github.com/julien-rousselot"><img src="image/gitlogo.svg" alt="Github"></img></a></li>
-                <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img src="image/gitlogopink.svg" alt="Github"> </img></a></li>
-                <li class="day"><a class="day logo__jour" href="https://www.linkedin.com/in/julien-rousselot-879775254/"><img  src="image/linkedinlogo.svg" alt="Linkedin"></img></a></li>
-                <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img src="image/linkedinnpink.svg" alt="Github"></img></a></li>
-                <li class="day"><a class="day logo__jour" href="julienrousselot.com"><img src="image/whatsapp.svg" alt="contact"></img></a></li>
-                <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img src="image/whatsapppink.svg" alt="Github"></img></a></li>
+                <li class="day"><a class="day logo__jour" href="https://github.com/julien-rousselot"><img class="imgNetwork" src="image/gitlogo.svg" alt="Github"></img></a></li>
+                <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img class="imgNetwork" src="image/gitlogopink.svg" alt="Github"> </img></a></li>
+                <li class="day"><a class="day logo__jour" href="https://www.linkedin.com/in/julien-rousselot-879775254/"><img class="imgNetwork" src="image/linkedinlogo.svg" alt="Linkedin"></img></a></li>
+                <li class="night"><a class="night logo__nuit" href="https://github.com/julien-rousselot"><img class="imgNetwork" src="image/linkedinnpink.svg" alt="Linkedin"></img></a></li>
+                <li class="day"><a class="day logo__jour" href="assets/JulienRousselotCV.pdf" target="_blank"><img class="imgNetwork" src="image\cvDay.svg" alt="CV"></img></a></li>
+                <li class="night"><a class="night logo__nuit" href="assets/JulienRousselotCV.pdf" target="_blank"><img class="imgNetwork" src="image\cvNight.svg" alt="CV"></img></a></li>
             </ul>
+            <img class="workTogether" src="image\workingTogether.svg" alt="working together">
             <p class="bye">À Bientôt!</p>
         </div>
-        
     </footer> 
     <script src="./js/portfolio.js"></script>
   </body>

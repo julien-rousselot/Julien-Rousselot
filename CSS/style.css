@@ -146,12 +146,39 @@ h3{
 
 .midPageSkills{
     background-color: #8AB9B0;
-    /* height: 100vh; */
+    font-size: 2.5rem;
     display: flex; 
     align-items: center; 
     flex-direction: column;
     position: relative;
-    padding: 4rem 3rem;
+    padding: 4rem 3.5rem;
+    color: #8E7DBE;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.midPageSkills p{
+    color: #F3F8F7;
+}
+
+.skillCard{
+    background-color: antiquewhite;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 10rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 0;
+}
+.skillCard:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.skillCard img{
+    width: 5rem;
 }
 
 .photoProfil{
@@ -166,23 +193,7 @@ h3{
     font-family: "Farsan", cursive;
     position: absolute;
     bottom: 0;
-    /* left: 50; */
 }
-
-.midPageSkills {
-    color: #fdfaff;
-    font-family: "Jersey 25", sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    font-style: normal;
-    text-align: center;
-    position: relative;
-}
-
-.frontEnd, .BackEnd, .OtherSkills{
-    display: none;
-}
-
 
 .midPageProject{
     background-color: #f1e3d3;
@@ -235,7 +246,6 @@ footer {
 .footerContact{
     position: relative;
     background-color: #F3F8F7;
-    /* background-color: #29272A; */
     width: 70vw;
     height: 40vh;
     border-radius: 5px;
@@ -249,7 +259,6 @@ footer {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem;
     color: #29272A;  
-    /* color: #F3F8F7;   */
     text-decoration: none; 
     padding-top: 2rem;
     word-spacing: 4px;
@@ -300,9 +309,14 @@ footer {
     color: #E0AAFF ;
 }
 
+.workTogether{
+    display: none;
+}
+
 .darkThemeWriteBlack{
     color: #29272A;
 }
+
 .darkThemeThing{
     background-color: #29272A;
     border-color: #E0AAFF;
@@ -316,24 +330,23 @@ footer {
     background-color: #774069;
 };
 
+
+
 @media (min-width: 388px) {
     .footerContact{
         padding: 0rem 1rem 4rem 2.2rem;
-    }
-
-    .midPageSkills{
-        height: 100vh;
     }
 
     .midPageProject {
         height: 100vh;
         padding: 9rem 0rem 7rem 0rem;
     }
+  
 }
 
 @media (min-width: 428px) {
     .midPageSkills{
-        padding-top: 6rem;
+        padding: 12rem 0;
     }
 
     .midPageProject {
@@ -434,21 +447,22 @@ footer {
         margin-right: -8px;
     }
 
-    .frontEnd{
-        display: block;
-        margin-bottom: 1.5rem ;
+    .skillsDiv{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
     }
 
-    .frontEnd p, .BackEnd p, .OtherSkills p{
-        font-family: "Farsan", cursive;
+    .skillCard {
+        width: 13rem;
+        margin: 1rem 2rem;
     }
-    
-    .BackEnd, .OtherSkills{
-        display: block;
-        border-top: #ffffff solid 4px;
-        width: 80vw;
-        margin-bottom: 1.5rem ;
+    .skillsDiv.one {
+        margin: 0 3rem;
     }
+
     .projects{
         font-size: 8rem;
         bottom: -9.8rem;
@@ -456,11 +470,6 @@ footer {
 
     .photoProfil{
         width: 20vw;
-    }
-
-    .midPageSkills {
-        padding-bottom: 7rem;
-        height: 130vh;
     }
 
     .day.window, .night.window {
@@ -474,6 +483,15 @@ footer {
 
     .footerContact {
         padding: 2rem 1rem 6rem 2.2rem;
+        position: relative;
+    }
+
+    .workTogether{
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        width: 30rem;
     }
 
     .bye {
@@ -500,8 +518,7 @@ footer {
     }
 
     .midPageSkills {
-        padding-bottom: 7rem;
-        height: 95vh;
+        padding-bottom: 12rem;
     }
 
     .imgNetwork{
