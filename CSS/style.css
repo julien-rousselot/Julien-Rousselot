@@ -29,12 +29,19 @@ header {
     height: 10vh;
 }
 
-#lamp{
+/* #lamp{
    display: none;
+} */
+
+.codeSofa{
+    width: 18rem;
+    position: absolute;
+    left: 15vw;
+    top: 95%;
 }
 
 h1 {
-    text-align: center;
+    text-align: center; 
     color: #99c1b9;
     font-family: "Farsan", cursive;
     font-size: 3rem;
@@ -52,8 +59,8 @@ h3{
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 4rem 3rem 4rem 3rem;
-    font-size: 2.5rem;
+    margin: 2rem 3rem;
+    font-size: 1.8rem;
 }
 #waveDay, #waveNight{
     width: 100%;
@@ -102,6 +109,10 @@ h3{
     bottom: 6rem;
     left: 45vw;
     z-index: 4;
+}
+
+.topArrow{
+    width: 1rem;
 }
 
 .navLien{
@@ -174,8 +185,7 @@ h3{
     padding: 1.5rem 0;
 }
 .skillCard:hover {
-    transform: scale(1.1);
-    transition: 0.1s;
+    transform: scale(1.2);
 }
 .skillCard img{
     width: 5rem;
@@ -211,7 +221,9 @@ h3{
   width: 10rem;
   padding: 0 10px;
 }
-
+.day.window:hover, .night.window:hover {
+    transform: scale(1.05);
+}
 #wave {
   width: 100vw;
 }
