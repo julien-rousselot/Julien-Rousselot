@@ -1,25 +1,45 @@
 const moonButton = document.getElementById("moonButton");
 const sunButton = document.getElementById("sunButton");
 
-const lamp = document.getElementById("lamp");
+const waveImage = document.getElementById("waveImage");
+const waveImage2 = document.getElementById("waveImage2");
+const lampe = document.getElementById("lampe");
 
-sunButton.addEventListener("click", offLight); 
-moonButton.addEventListener("click", onLight);
-// lamp.addEventListener("click", offLight); 
-  
-  function onLight(){
+let isLightOn = true;
+
+moonButton.addEventListener("click", toggleLight);
+sunButton.addEventListener("click", toggleLight);
+lampe.addEventListener("click", toggleLight);
+
+function toggleLight() {
+  if (isLightOn) {
+    offLight();
+    isLightOn = false;
+  } else {
+    onLight();
+    isLightOn = true;
+  }
+}
+
+function onLight() {
   document.querySelectorAll(".night").forEach(element => {
     element.style.display = "none";
   });
   document.querySelectorAll(".day").forEach(element => {
     element.style.display = "flex";
   });
-  // lamp.scr = "image/lightnight.svg";
+
   document.querySelector('h1').classList.remove('darkTheme');
   document.querySelector('.topPage').classList.remove('darkThemeThing');
   document.querySelector('.midPageProject').classList.remove('darkThemePurple');
   document.querySelector('.navLien').classList.remove('darkThemeThing');
   document.querySelector('.navLien2').classList.remove('darkThemeThing');
+
+  if (window.innerWidth >= 1000) {
+    waveImage.src = "/image/vagueVerte.svg";
+    waveImage2.src = "/image/vagueVerte.svg";
+    lampe.src = "/image/lightDay.svg";
+  }
 
   document.querySelector('.btnTop').classList.remove('arrowButtonDark');
   document.querySelectorAll('.buttonIcon').forEach(btnElement => {
@@ -41,27 +61,32 @@ moonButton.addEventListener("click", onLight);
     } else if (index === 3) {
       img.src = "image/picturemyself.svg";
     } else if (index === 4) {
-    img.src = "image/ordiclavier.svg";
+      img.src = "image/ordiclavier.svg";
     } else if (index === 5) {
-    img.src = "image/canape.svg";
+      img.src = "image/canape.svg";
     }
   });
 };
 
-
-function offLight(){
+function offLight() {
   document.querySelectorAll(".day").forEach(element => {
-  element.style.display = "none";
-});
-// lamp.scr = "image/light.svg";
-document.querySelectorAll(".night").forEach(element => {
-  element.style.display = "flex";
+    element.style.display = "none";
   });
+  document.querySelectorAll(".night").forEach(element => {
+    element.style.display = "flex";
+  });
+
   document.querySelector('h1').classList.add('darkTheme');
   document.querySelector('.topPage').classList.add('darkThemeThing');
   document.querySelector('.midPageProject').classList.add('darkThemePurple');
   document.querySelector('.navLien').classList.add('darkThemeThing');
   document.querySelector('.navLien2').classList.add('darkThemeThing');
+
+  if (window.innerWidth >= 1000) {
+    waveImage.src = "/image/vagueRose.svg";
+    waveImage2.src = "/image/vagueRose.svg";
+    lampe.src = "/image/lightNight.svg";
+  }
 
   document.querySelector('.btnTop').classList.add('arrowButtonDark');
   document.querySelectorAll('.buttonIcon').forEach(btnElement => {
@@ -74,7 +99,6 @@ document.querySelectorAll(".night").forEach(element => {
   document.querySelector('.midPageSkills').classList.add('darkThemeSection');
   document.querySelector('footer').classList.add('darkThemeSection');
   document.querySelectorAll('.navImg').forEach((img, index) => {
-    console.log(img, index);
     if (index === 0) {
       img.src = "image/picturemyselfnight.svg";
     } else if (index === 1) {
@@ -82,13 +106,11 @@ document.querySelectorAll(".night").forEach(element => {
     } else if (index === 2) {
       img.src = "image/canapenight.svg";
     } else if (index === 3) {
-    img.src = "image/picturemyselfnight.svg";
+      img.src = "image/picturemyselfnight.svg";
     } else if (index === 4) {
-    img.src = "image/ordiclaviernight.svg";
+      img.src = "image/ordiclaviernight.svg";
     } else if (index === 5) {
-    img.src = "image/canapenight.svg";
+      img.src = "image/canapenight.svg";
     }
   });
 };
-
-
