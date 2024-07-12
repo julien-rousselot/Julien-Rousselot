@@ -343,13 +343,7 @@ footer {
     .midPageSkills{
         padding: 12rem 0;
     }
-    .wave{
-        display: block;
-        width: 100vw;
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-    }
+
 
     .midPageProject {
         padding: 7rem 0rem 5rem 0rem;
@@ -370,7 +364,13 @@ footer {
         z-index: 1;
     }
 
-
+    .wave{
+        display: block;
+        width: 100vw;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    }
    
     section div { 
         position: relative;
