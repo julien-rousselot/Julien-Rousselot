@@ -20,10 +20,6 @@ html {
     flex-direction: column;
 }
 
-.topPageDiv{
-    position: relative;
-}
-
 header {
     padding-top: 0.5rem;
     height: 10vh;
