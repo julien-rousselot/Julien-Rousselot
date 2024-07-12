@@ -125,7 +125,6 @@ h3{
 
 .navLien2{
     display: none;
-    margin: 5rem 0;
 }
 
 .navImg{
@@ -433,7 +432,7 @@ footer {
     }
 
     .topPage{
-        height: 110vh;
+        height: 120vh;
     }
 
     .arrowButton{
@@ -450,6 +449,7 @@ footer {
         position: relative;
         display: flex;
         justify-content: space-around;
+        padding: 6rem 0;
    
     }
 
