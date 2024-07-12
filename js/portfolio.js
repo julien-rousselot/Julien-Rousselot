@@ -36,9 +36,9 @@ function onLight() {
   document.querySelector('.navLien2').classList.remove('darkThemeThing');
 
   if (window.innerWidth >= 1000) {
-    waveImage.src = "/image/vagueVerte.svg";
-    waveImage2.src = "/image/vagueVerte.svg";
-    lampe.src = "/image/lightDay.svg";
+    waveImage.src = "image/vagueVerte.svg";
+    waveImage2.src = "image/vagueVerte.svg";
+    lampe.src = "image/lightDay.svg";
   }
 
   document.querySelector('.btnTop').classList.remove('arrowButtonDark');
@@ -83,9 +83,9 @@ function offLight() {
   document.querySelector('.navLien2').classList.add('darkThemeThing');
 
   if (window.innerWidth >= 1000) {
-    waveImage.src = "/image/vagueRose.svg";
-    waveImage2.src = "/image/vagueRose.svg";
-    lampe.src = "/image/lightNight.svg";
+    waveImage.src = "image/vagueRose.svg";
+    waveImage2.src = "image/vagueRose.svg";
+    lampe.src = "image/lightNight.svg";
   }
 
   document.querySelector('.btnTop').classList.add('arrowButtonDark');
