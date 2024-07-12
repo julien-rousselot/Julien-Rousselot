@@ -44,7 +44,7 @@ h1 {
     text-align: center; 
     color: #99c1b9;
     font-family: "Farsan", cursive;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h3{
@@ -73,9 +73,9 @@ h3{
     font-weight: 400;
     font-style: normal;
     color: #8E7DBE;
-    font-size:6rem;
+    font-size:8rem;
     position: absolute;
-    bottom: -7.5rem;
+    bottom: -10rem;
     z-index: 2;
 }
 
@@ -125,6 +125,11 @@ h3{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.navLien2{
+    display: none;
+    margin: 5rem 0;
 }
 
 .navImg{
@@ -439,8 +444,16 @@ footer {
     }
 
     .navLien{
-        position: absolute;
-        top: 62%;
+        display: none;
+    }
+
+    .navLien2{
+        height: 10rem;
+        background-color: none;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+   
     }
 
     .navImg{
@@ -521,7 +534,7 @@ footer {
     }
 
     .textProjects {
-        font-size: 10rem;
+        font-size: 20rem;
         bottom: -11rem;
     }
 

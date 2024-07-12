@@ -19,6 +19,8 @@ moonButton.addEventListener("click", onLight);
   document.querySelector('.topPage').classList.remove('darkThemeThing');
   document.querySelector('.midPageProject').classList.remove('darkThemePurple');
   document.querySelector('.navLien').classList.remove('darkThemeThing');
+  document.querySelector('.navLien2').classList.remove('darkThemeThing');
+
   document.querySelector('.btnTop').classList.remove('arrowButtonDark');
   document.querySelectorAll('.buttonIcon').forEach(btnElement => {
     btnElement.classList.remove('darkThemeThing');
@@ -36,6 +38,12 @@ moonButton.addEventListener("click", onLight);
       img.src = "image/ordiclavier.svg";
     } else if (index === 2) {
       img.src = "image/canape.svg";
+    } else if (index === 3) {
+      img.src = "image/picturemyself.svg";
+    } else if (index === 4) {
+    img.src = "image/ordiclavier.svg";
+    } else if (index === 5) {
+    img.src = "image/canape.svg";
     }
   });
 };
@@ -53,6 +61,8 @@ document.querySelectorAll(".night").forEach(element => {
   document.querySelector('.topPage').classList.add('darkThemeThing');
   document.querySelector('.midPageProject').classList.add('darkThemePurple');
   document.querySelector('.navLien').classList.add('darkThemeThing');
+  document.querySelector('.navLien2').classList.add('darkThemeThing');
+
   document.querySelector('.btnTop').classList.add('arrowButtonDark');
   document.querySelectorAll('.buttonIcon').forEach(btnElement => {
     btnElement.classList.add('darkThemeThing');
@@ -64,12 +74,19 @@ document.querySelectorAll(".night").forEach(element => {
   document.querySelector('.midPageSkills').classList.add('darkThemeSection');
   document.querySelector('footer').classList.add('darkThemeSection');
   document.querySelectorAll('.navImg').forEach((img, index) => {
+    console.log(img, index);
     if (index === 0) {
       img.src = "image/picturemyselfnight.svg";
     } else if (index === 1) {
       img.src = "image/ordiclaviernight.svg";
     } else if (index === 2) {
       img.src = "image/canapenight.svg";
+    } else if (index === 3) {
+    img.src = "image/picturemyselfnight.svg";
+    } else if (index === 4) {
+    img.src = "image/ordiclaviernight.svg";
+    } else if (index === 5) {
+    img.src = "image/canapenight.svg";
     }
   });
 };
