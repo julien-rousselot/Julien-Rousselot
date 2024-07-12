@@ -209,7 +209,6 @@ h3{
 
 .midPageProject{
     background-color: #f1e3d3;
-    height: 80vh;
     text-align: center;
     padding: 7rem 0rem 10rem 0rem ;
     font-size:2rem;
@@ -220,12 +219,14 @@ h3{
 }
 
 .day.window, .night.window  {
-  width: 10rem;
+  width: 20rem;
   padding: 0 10px;
 }
+
 .day.window:hover, .night.window:hover {
     transform: scale(1.05);
 }
+
 #wave {
   width: 100vw;
 }
@@ -358,13 +359,13 @@ footer {
   
 }
 
-@media (min-width: 428px) {
+@media (min-width: 480px) {
     .midPageSkills{
         padding: 12rem 0;
     }
 
     .midPageProject {
-        height: 80vh;
+        /* height: 80vh; */
         padding: 7rem 0rem 5rem 0rem;
     }
 
@@ -501,6 +502,7 @@ footer {
 
     .midPageProject {
         height: 85vh;
+
     }
 
     .footerContact {
