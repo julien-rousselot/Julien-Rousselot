@@ -339,7 +339,7 @@ footer {
   
 }
 
-@media (min-width: 480px) {
+@media (min-width: 500px) {
     .midPageSkills{
         padding: 12rem 0;
     }
@@ -352,7 +352,6 @@ footer {
     }
 
     .midPageProject {
-        /* height: 80vh; */
         padding: 7rem 0rem 5rem 0rem;
     }
 
