@@ -52,11 +52,6 @@ h3{
     margin: 2rem 3rem;
     font-size: 1.8rem;
 }
-#waveDay, #waveNight{
-    width: 100%;
-    position: absolute;
-    bottom: -1px;
-}
 
 .projects{
     font-family: "Jersey 25", sans-serif;
@@ -118,6 +113,10 @@ h3{
 }
 
 .navLien2{
+    display: none;
+}
+
+.wave{
     display: none;
 }
 
@@ -215,9 +214,7 @@ h3{
   padding: 0 10px;
 }
 
-#wave {
-  width: 100vw;
-}
+
 
 header div li img {
   width: 35px;
@@ -231,12 +228,7 @@ mark{
    font-style: normal;
 }
 
-#waveFooterDay, #waveFooterNight{
-    width: 100vw;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-}
+
 
 footer {
     height: 100vh;
@@ -351,6 +343,13 @@ footer {
     .midPageSkills{
         padding: 12rem 0;
     }
+    .wave{
+        display: block;
+        width: 100vw;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    }
 
     .midPageProject {
         /* height: 80vh; */
@@ -372,6 +371,8 @@ footer {
         z-index: 1;
     }
 
+
+   
     section div { 
         position: relative;
     }
