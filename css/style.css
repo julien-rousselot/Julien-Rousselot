@@ -497,7 +497,7 @@ footer {
     }
 
     .midPageProject {
-        height: 25vh;
+        height: 40vh;
 
     }
 
@@ -543,9 +543,5 @@ footer {
 
     .imgNetwork{
         width: 4rem;
-    }
-
-    .midPageProject {
-        height: 40vh;
     }
 } 
