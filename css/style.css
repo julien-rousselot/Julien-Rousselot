@@ -377,7 +377,7 @@ footer {
         position: relative;
     }
     .skillCard:hover {
-        transform: scale(1.2);
+        transform: scale(1.05);
     }
     .day.window:hover, .night.window:hover {
         transform: scale(1.05);
